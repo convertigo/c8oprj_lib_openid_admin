@@ -17,70 +17,30 @@ scriptContent:
         
 segment: path-to-page
 title: First page
-↓Header [mobile.components.UIDynamicElement-1491634212350]: 
-  beanData: '{"ionBean":"Header"}'
-  comment: Page header
-  tagName: ion-header
-  ↓NavBar [mobile.components.UIDynamicElement-1491634231108]: 
-    beanData: '{"ionBean":"NavBar"}'
-    tagName: ion-navbar
-    ↓BarTitle [mobile.components.UIDynamicElement-1491634265317]: 
-      beanData: '{"ionBean":"BarTitle"}'
-      tagName: ion-title
-      ↓Text [mobile.components.UIText-1491634275121]: 
-        textValue: 
-          - xmlizable: 
-            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-            - MobileSmartSourceType: plain:My First App
-    ↓Button [mobile.components.UIDynamicElement-1491634442029]: 
-      beanData: '{"ionBean":"Button","MenuMode":"plain:menuToggle"}'
-      comment: A button to toggle the menu
-      tagName: button
-      ↓Icon [mobile.components.UIDynamicElement-1491634475867]: 
-        beanData: '{"ionBean":"Icon","IconName":"plain:menu"}'
-        tagName: ion-icon
-    ↓ButtonSet [mobile.components.UIDynamicElement-1491634611427]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
-      tagName: ion-buttons
-      ↓Button [mobile.components.UIDynamicElement-1491634621907]: 
-        beanData: '{"ionBean":"Button"}'
-        tagName: button
-        ↓Icon [mobile.components.UIDynamicElement-1491634637555]: 
-          beanData: '{"ionBean":"Icon","IconName":"plain:more"}'
-          tagName: ion-icon
 ↓Content [mobile.components.UIDynamicElement-1489674805352]: 
   beanData: '{"ionBean":"Content"}'
   comment: Page content
   tagName: ion-content
-↓Footer [mobile.components.UIDynamicElement-1491634242460]: 
-  beanData: '{"ionBean":"Footer"}'
-  comment: Page footer
-  tagName: ion-footer
-  ↓ToolBar [mobile.components.UIDynamicElement-1491634317538]: 
-    beanData: '{"ionBean":"ToolBar"}'
-    tagName: ion-toolbar
-    ↓ButtonSet [mobile.components.UIDynamicElement-1491634325595]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:left"}'
-      tagName: ion-buttons
-      ↓Button [mobile.components.UIDynamicElement-1491634332730]: 
-        beanData: '{"ionBean":"Button"}'
-        tagName: button
-        ↓Text [mobile.components.UIText-1491634340354]: 
-          textValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:Action 1
-    ↓ButtonSet1 [mobile.components.UIDynamicElement-1491634373539]: 
-      beanData: '{"ionBean":"ButtonSet","SetPosition":"plain:right"}'
-      tagName: ion-buttons
-      ↓Button [mobile.components.UIDynamicElement-1491634376874]: 
-        beanData: '{"ionBean":"Button"}'
-        tagName: button
-        ↓Text [mobile.components.UIText-1491634383107]: 
-          textValue: 
-            - xmlizable: 
-              - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-              - MobileSmartSourceType: plain:Action 2
+  ↓Grid [mobile.components.UIDynamicElement-1586359346357]: 
+    beanData: '{"ionBean":"Grid","Height":"plain:height:100%"}'
+    tagName: ion-grid
+    ↓GridRow [mobile.components.UIDynamicElement-1586359351966]: 
+      beanData: '{"ionBean":"GridRow","Height":"plain:height:100%"}'
+      tagName: ion-row
+      ↓GridCol [mobile.components.UIDynamicElement-1586359355925]: 
+        beanData: '{"ionBean":"GridCol","AlignItemsCenter":"plain:align-self-center"}'
+        tagName: ion-col
+        ↓TextFormat [mobile.components.UIDynamicElement-1586359396125]: 
+          beanData: '{"ionBean":"TextFormat","TextCenter":"plain:text-center"}'
+          tagName: div
+          ↓H1 [mobile.components.UIDynamicElement-1586359408719]: 
+            beanData: '{"ionBean":"Heading1"}'
+            tagName: h1
+            ↓Text [mobile.components.UIText-1586359415470]: 
+              textValue: 
+                - xmlizable: 
+                  - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+                  - MobileSmartSourceType: plain:Connecting to Admin Console
 ↓PageEvent [mobile.components.UIPageEvent-1586339861259]: 
   ↓OAuthLogin [mobile.components.UIDynamicAction-1586339898965]: 
     beanData: |
@@ -110,3 +70,4 @@ title: First page
                 		window.location.href = location + "/admin/login.html"
                 		resolve();
                 '
+        isEnabled: false
