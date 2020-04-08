@@ -6,6 +6,7 @@
     
   corsOrigin: =Origin
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
+  ↓PerformAdminLogin [sequences.GenericSequence]: 🗏 sequences/PerformAdminLogin.yaml
   ↓MobileApplication [core.MobileApplication]: 
     comment: Describes the mobile application global properties
     splashRemoveMode: beforeUpdate

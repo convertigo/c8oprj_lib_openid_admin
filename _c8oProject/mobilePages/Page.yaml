@@ -81,3 +81,21 @@ title: First page
             - xmlizable: 
               - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
               - MobileSmartSourceType: plain:Action 2
+↓PageEvent [mobile.components.UIPageEvent-1586339861259]: 
+  ↓OAuthLogin [mobile.components.UIDynamicAction-1586339898965]: 
+    beanData: |
+      '{
+       "ionBean": "OAuthLoginAction",
+       "provider": "plain:openid",
+       "clientid": "plain:1044339658736-vg4dsovd0et42bs2g1litpfl2anqo78k.apps.googleusercontent.com",
+       "authorization_endpoint": "plain:https:\/\/accounts.google.com\/o\/oauth2\/v2\/auth",
+       "callbackurl": "plain:https:\/\/c8ocloud.convertigo.net\/convertigo\/projects\/lib_OAuth\/getToken.html"
+      }'
+    ↓CallPerformAdminLogin [mobile.components.UIDynamicAction-1586353520121]: 
+      beanData: '{"ionBean":"CallSequenceAction","requestable":"plain:lib_OpenIDAdmin.PerformAdminLogin"}'
+      ↓id_token [mobile.components.UIControlVariable-1586353531208]: 
+        comment: new variable
+        varValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
+            - MobileSmartSourceType: script:out.id_token
