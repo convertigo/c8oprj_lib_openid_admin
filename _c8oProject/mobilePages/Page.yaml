@@ -40,7 +40,7 @@ title: First page
               textValue: 
                 - xmlizable: 
                   - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
-                  - MobileSmartSourceType: plain:Connecting to Admin Console
+                  - MobileSmartSourceType: plain:Connecting to Admin Console...
 ↓PageEvent [mobile.components.UIPageEvent-1586339861259]: 
   ↓OAuthLogin [mobile.components.UIDynamicAction-1586339898965]: 
     beanData: |
@@ -70,4 +70,3 @@ title: First page
                 		window.location.href = location + "/admin/login.html"
                 		resolve();
                 '
-        isEnabled: false
