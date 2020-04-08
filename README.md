@@ -12,8 +12,10 @@ This is a template project you can cutomize for your needs. Customization points
 
 Deploy this project to a Convertigo server and use the 
 
-  http://<yourserver>:<port>/convertigo/projects/lib_OpenIDAdmin/DisplayObjects/mobile/index.html#login
-  
+```
+http://[yourserver]:[port]/convertigo/projects/lib_OpenIDAdmin/DisplayObjects/mobile/index.html#login
+```
+ 
 url to access the Convertigo admin console. A Window will popup (You might have to Authorize popups on this site...) asking for your IDP credentials. Fill them in, validate.
 
 If your OpenID cerdentials are ok, and if your user is in the __validAdminUserList__ you will be redirected to the Convertigo Admin console with admin privileges.
