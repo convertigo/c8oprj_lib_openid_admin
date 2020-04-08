@@ -99,3 +99,14 @@ title: First page
           - xmlizable: 
             - ↑classname: com.twinsoft.convertigo.beans.mobile.components.MobileSmartSourceType
             - MobileSmartSourceType: script:out.id_token
+      ↓RedirectToAdmin [mobile.components.UICustomAction-1586357915382]: 
+        actionValue: 
+          - xmlizable: 
+            - ↑classname: com.twinsoft.convertigo.beans.common.FormatedContent
+            - com.twinsoft.convertigo.beans.common.FormatedContent: 
+              →: |
+                '		page.c8o.log.debug(''[MB] ''+ props.actionFunction +'': ''+ props.actionName);
+                		let location = window.location.href.substring(0, window.location.href.indexOf("/projects"));
+                		window.location.href = location + "/admin/login.html"
+                		resolve();
+                '

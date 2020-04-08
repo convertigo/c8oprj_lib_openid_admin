@@ -1,0 +1,30 @@
+↓DoTheAdminLoginStuff [steps.SimpleStep-1586353762582]: 
+  expression: |
+    var httpSession = context.httpServletRequest.getSession(true);
+    
+    httpSession.setAttribute(
+    		com.twinsoft.convertigo.engine.AuthenticatedSessionManager.SessionKey.ADMIN_USER.toString(),
+    		"admin"
+    );
+    
+    roles = com.twinsoft.convertigo.engine.AuthenticatedSessionManager.toRoles(
+    		com.twinsoft.convertigo.engine.AuthenticatedSessionManager.Role.WEB_ADMIN,
+    		com.twinsoft.convertigo.engine.AuthenticatedSessionManager.Role.TEST_PLATFORM,
+    		com.twinsoft.convertigo.engine.AuthenticatedSessionManager.Role.AUTHENTICATED
+    );
+    
+    com.twinsoft.convertigo.engine.Engine.authenticatedSessionManager.addAuthenticatedSession(httpSession, roles);
+    com.twinsoft.convertigo.engine.enums.SessionAttribute.authenticatedUser.set(httpSession, "c8o:admin:oAuth");
+    
+↓id_token [variables.RequestableVariable-1586353440679]: 
+  comment: |
+    From this token we have to check if it is valid and if it is, get the userid behind
+    
+    This is some custom code that differs for each openID implementation.
+    
+    
+↓validAdminUserList [variables.RequestableVariable-1586355067391]: 
+  comment: |
+    Enter here as a JSOn array the list of valid admin userid ids They will be compared to the OpenID is_token user and if they match, we will authorize admin privileges
+    
+  value: '[olivierp@convertigo.com]'
