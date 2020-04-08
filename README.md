@@ -7,7 +7,7 @@ This is a template project you can cutomize for your needs. Customization points
   * Set the __Authorization endpoint__ to your OpenID IDP authorization endpoint url
   * Set the __Cliend ID__ to your IDP ClientID 
 
-* Customize the Sequences->PeformAdminLogin to decide if the id_token received is represent a valid Convertigo user. for this, you will have to call your OpenID IDP with this tokenID and get information about the user. This is specific to each IDP.
+* Customize the Sequences->PeformAdminLogin to decide if the id_token received represents a valid Convertigo user. for this, you will have to call your OpenID IDP with this tokenID and get information about the user. This is specific to each IDP.
 * Compare the user authenticated to the list of __validAdminUserList__ and reject if the authenticated user is not on the list.
 
 Deploy this project to a Convertigo server and use the 
